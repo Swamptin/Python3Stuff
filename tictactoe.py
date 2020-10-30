@@ -1,4 +1,8 @@
 #!/bin/python3
+# initial source:
+# https://medium.com/byte-tales/the-classic-tic-tac-toe-game-in-python-3-1427c68b8874
+# The above steps through how to write this and what each section is doing
+# really well and I am very grateful to James Shah and Byte Code for sharing it.
 import sys
 
 theBoard = {'7':' ' , '8':' ' , '9':' ' ,
