@@ -10,10 +10,7 @@ def usage():
     sys.exit()
 
 def main(image, url):
-    #original = cv2.imread("test1.jpg")
     original = cv2.imread(image)
-    dupe = cv2.imread("/home/swamptin/Pictures/NetworkLaterDiagram.png") # This needs to be a png test too
-
     req = urllib.request.urlopen('https://hips.hearstapps.com/ghk.h-cdn.co/assets/16/08/gettyimages-464163411.jpg')
     arr = np.asarray(bytearray(req.read()), dtype=np.uint8)
     dupe = cv2.imdecode(arr, -1) # 'Load it as it is'
