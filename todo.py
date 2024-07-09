@@ -9,7 +9,12 @@ def addTask():
     print(f"The task '{task}' was added successfully.")
 
 def showTasks():
-    if len(task)
+    if not tasks:
+        print("There are currently no tasks. \n")
+    else:
+        print("Current Tasks:")
+        for index, task in enumerate(tasks):
+            print(f"Task #{index}: {task}")
 
 def deleteTask():
     showTasks()
